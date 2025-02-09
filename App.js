@@ -17,7 +17,7 @@ export default function App() {
   }
   return (
     <SafeAreaView style={styles.wrapper}>
-      <Text style={styles.heading}>Made by Tushar with ❤️ </Text>
+      <Text style={[styles.heading,{marginTop:10}]}>Made by Tushar with ❤️ </Text>
       <TextInput value={display} style={styles.display}/>
 
       <View style={styles.btnWrapper}>
@@ -99,7 +99,7 @@ export default function App() {
 
       <View style={styles.btnWrapper}>
         <TouchableOpacity onPress={calculateValue} style={[styles.btn,{width:'98%',backgroundColor:'pink'}]}>
-          <Text style={styles.btnText}>=</Text>
+          <Text style={[styles.btnText,{fontSize:60}]}>=</Text>
         </TouchableOpacity>
       </View>
 
